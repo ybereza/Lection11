@@ -87,8 +87,8 @@ public class FlowLayout extends ViewGroup {
             }
 
             v.measure(
-                    MeasureSpec.makeMeasureSpec(childWidthType, childWidth),
-                    MeasureSpec.makeMeasureSpec(childHeightType, childHeight)
+                    MeasureSpec.makeMeasureSpec(childWidth, childWidthType),
+                    MeasureSpec.makeMeasureSpec(childHeight, childHeightType)
             );
 
             int childWidthReal = v.getMeasuredWidth() + lp.leftMargin + lp.rightMargin;
